@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ConsoleApp.Aula5.Livro">
+    <Position X="4.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAABAAAAAAAEAAAAAAAAAAAAAAAIAAAAAFA=</HashCode>
+      <FileName>Livro.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Autores" />
+      <Property Name="Reviews" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="ConsoleApp.Aula5.LivroAutor">
+    <Position X="6.75" Y="1" Width="1.5" />
+    <AssociationLine Name="Livro" Type="ConsoleApp.Aula5.Livro" FixedFromPoint="true">
+      <Path>
+        <Point X="6.75" Y="2.063" />
+        <Point X="5.75" Y="2.063" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>gAgAAAAAAAAAAAAAAAAEAAAAAAAAAEAAAAAAAAAAAAQ=</HashCode>
+      <FileName>LivroAutor.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Autor" />
+      <Property Name="Livro" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ConsoleApp.Aula5.Review">
+    <Position X="4.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAQAAAAAAAAEAAAAAAAAAEAAEAAAACAAAAA=</HashCode>
+      <FileName>Review.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConsoleApp.Aula5.Autor">
+    <Position X="6.5" Y="3.25" Width="1.5" />
+    <AssociationLine Name="Livros" Type="ConsoleApp.Aula5.LivroAutor" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="8" Y="3.875" />
+        <Point X="8.625" Y="3.875" />
+        <Point X="8.625" Y="1.938" />
+        <Point X="8.25" Y="1.938" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAAAAAAAAAAAAAAACAEAAAAAAAAEAAAA=</HashCode>
+      <FileName>Autor.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Livros" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
